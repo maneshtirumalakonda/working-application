@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Delicious Bites - Restaurant</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fffaf5;
+      color: #333;
+    }
+
+    /* Hero Section */
+    header {
+      background-image: url('https://images.unsplash.com/photo-1551218808-94e220e084d2');
+      background-size: cover;
+      background-position: center;
+      height: 70vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      padding: 20px;
+    }
+
+    header h1 {
+      font-size: 3.5rem;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 20px 30px;
+      border-radius: 10px;
+    }
+
+    /* Menu Section */
+    .menu {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .menu h2 {
+      font-size: 2.5rem;
+      margin-bottom: 30px;
+      color: #d35400;
+    }
+
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 20px;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      overflow: hidden;
+      width: 280px;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .card-body {
+      padding: 20px;
+    }
+
+    .card-body h3 {
+      font-size: 1.4rem;
+      margin-bottom: 10px;
+      color: #e67e22;
+    }
+
+    .card-body p {
+      font-size: 1rem;
+      color: #555;
+      margin-bottom: 10px;
+    }
+
+    .price {
+      font-weight: bold;
+      font-size: 1.1rem;
+      color: #c0392b;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #333;
+      color: #fff;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to Delicious Bites</h1>
+  </header>
+
+  <section class="menu">
+    <h2>Our Featured Dishes</h2>
+    <div class="card-container">
+      
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1600891963933-43e9271ed789" alt="Pizza">
+        <div class="card-body">
+          <h3>Cheese Burst Pizza</h3>
+          <p>Loaded with mozzarella and fresh toppings.</p>
+          <p class="price">₹299</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1606756793692-6c2de7c2b4ce" alt="Burger">
+        <div class="card-body">
+          <h3>Classic Beef Burger</h3>
+          <p>Grilled to perfection with cheese and lettuce.</p>
+          <p class="price">₹199</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1600628422010-6348dfc0f056" alt="Pasta">
+        <div class="card-body">
+          <h3>Alfredo Pasta</h3>
+          <p>White sauce pasta with herbs and parmesan.</p>
+          <p class="price">₹249</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1590080876300-5d40f9db3c56" alt="Dessert">
+        <div class="card-body">
+          <h3>Chocolate Brownie</h3>
+          <p>Served warm with a scoop of vanilla ice cream.</p>
+          <p class="price">₹149</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Delicious Bites. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
